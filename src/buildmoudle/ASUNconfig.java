@@ -1,5 +1,3 @@
-设计模式Builder模式，封装了内部的构建细节，但是却允许用户更加精细的去控制构建流程。从而达到代码的解耦
-为了符合开闭原则
 package buildmoudle;
 
 /**
@@ -54,7 +52,6 @@ public class ASUNconfig {
             return asuNconfig;
         }
     }
-}
 
-配置config将所有属性对外封闭，只允许get，通过Builder来实现生成配置文件，外部不允许修改所有字段。
-请看ASUNcomputer.java ASUNconfig.java两个文件
+
+}

@@ -16,7 +16,7 @@ public abstract class Computer {
         mDisplay = display;
     }
 
-    public abstract void setOS();
+    protected abstract void setOS();
 
     @Override
     public String toString(){

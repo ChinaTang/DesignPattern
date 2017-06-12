@@ -13,7 +13,12 @@ public class BuildMoudleMain {
 
         MacComputer.MacComputerBuilder computerBuilder = new MacComputer.MacComputerBuilder();
         computer = computerBuilder.builderBoard("ASUN2").builderDisplay("RETAIN2").builderOS().create();
-        System.out.print(computer);
+        System.out.println(computer);
+
+        ASUNconfig.Builder builder1 = new ASUNconfig.Builder();
+        ASUNconfig asuNconfig = builder1.setBroad("ASUNBORAD").setDisplay("ASUNDISPLAY").setOS("WINDOWS").create();
+        ASUNcomputer asuNcomputer = new ASUNcomputer(asuNconfig);
+        System.out.println(asuNcomputer);
     }
 
 }

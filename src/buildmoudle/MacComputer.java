@@ -8,7 +8,7 @@ public class MacComputer extends Computer{
     protected MacComputer(){}
 
     @Override
-    public void setOS() {
+    protected void setOS() {
         mOS = "Mac OS X 10.0";
     }
 
